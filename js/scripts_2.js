@@ -1,15 +1,13 @@
- function rysujChoinke (x) {
-  for (var i = 1; i <= x; i++){ 
+ function rysujChoinke (rows) {
+  for (var i = 1; i <= rows; i++){ 
     var star = "";
-      for (var c = 1; c < x*2/i; c++){
+      for (var c = 0; c < rows-i; c++){
             star +=' ';
           }
       for (var n = 0; n < i*2-1; n++){ 
-         star += '*'; 
-          
-          
+         star += '*';     
       } 
     console.log(star); 
   } 
 } 
- rysujChoinke(5);
+ rysujChoinke(15);
